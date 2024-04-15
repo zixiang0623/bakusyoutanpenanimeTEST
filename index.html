@@ -57,24 +57,45 @@
     <div id="scratch-container"></div>
 
     <script>
+        window.onload = function() {
+            showPrompt();
+        };
+
         function showPrompt() {
-            // ユーザーが入力したプロジェクトIDを取得
+            // プロジェクトIDを取得
             const projectId = parseInt(prompt("プロジェクトIDを入力してください"));
 
             // プロジェクトIDが入力されているかどうかチェック
             if (projectId) {
                 // プロジェクトIDが1の場合、特定のScratch作品を表示
                 if (projectId === 1) {
-                    const scratchContainer = document.getElementById('scratch-container');
-                    scratchContainer.innerHTML = '<iframe src="https://scratch.mit.edu/projects/530461761/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>';
+                    displayScratchProject(1);
+                } else if (projectId === 2) {
+                    displayScratchProject(2);
                 } else {
-                    const scratchContainer = document.getElementById('scratch-container');
-                    scratchContainer.innerHTML = '<iframe src="https://scratch.mit.edu/projects/1000392861/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>';
+                    displayScratchProject(3);
                 }
             }
         }
-    </script>
-</div>
+
+        function displayScratchProject(projectId) {
+            const scratchContainer = document.getElementById('scratch-container');
+            let scratchProjectURL;
+
+            switch (projectId) {
+                case 1:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/530461761/embed';
+                    break;
+                case 2:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/530919324/embed';
+                    break;
+                default:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/1000392861/embed';
+            }
+
+            scratchContainer.innerHTML = `<iframe src="${scratchProjectURL}" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>`;
+        }
+    </script></div>
     <p>&copy; 2024 <a href="https://scratch.mit.edu/users/zixiang2013/">ホームページ制作者:zixiang2013</a>
         ,<a href="https://scratch.mit.edu/users/uyou0003/">爆笑短編アニメ管理者:uyou0003</a>
         ,<a href="https://scratch.mit.edu/studios/29697538/">爆笑短編アニメスタジオ:</a>
