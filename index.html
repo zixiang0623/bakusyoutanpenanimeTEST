@@ -2,9 +2,55 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>爆笑短編アニメ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #855cd6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #855cd6;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    <h1>爆笑短編アニメまとめ</h1>
+</header>
+
+<div class="container">
+    <body>
     <h1>爆笑短編アニメ</h1>
     <div id="scratch-container"></div>
 
@@ -48,5 +94,17 @@
             scratchContainer.innerHTML = `<iframe src="${scratchProjectURL}" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>`;
         }
     </script>
+</body>
+</div>
+
+<footer>
+    <p>&copy; 2024 <a href="https://scratch.mit.edu/users/zixiang2013/">ホームページ制作者:zixiang2013</a>
+        ,<a href="https://scratch.mit.edu/users/uyou0003/">爆笑短編アニメ管理者:uyou0003</a>
+        ,<a href="https://scratch.mit.edu/studios/29697538/">爆笑短編アニメスタジオ:</a>
+        <br>いかなることがあっても、このページの再配布は禁止します。
+        <br>最終更新:2024/04/13 17:40
+    </p>
+</footer>
+
 </body>
 </html>
