@@ -46,6 +46,7 @@
             width: 100%;
         }
     </style>
+    <link rel="shortcut icon" type="image/x-icon" href="へんなの.svg">
 </head>
 <body>
 <header>
@@ -67,7 +68,9 @@
     </div>
     <br><div id="scratch-container" style="display: flex; justify-content: center;"></div>
 </div>
-
+<audio id="myAudio">
+    <source src="爆発.wav" type="audio/mpeg">
+</audio>  
 <script>
     function showPrompt() {
         const projectId = parseInt(prompt("見たい話数を入力"));
@@ -79,7 +82,7 @@
                     scratchProjectURL = 'https://scratch.mit.edu/projects/530461761/embed';
                     console.log(projectId+'話を表示しました。');
                     break;                
-                    case 2:
+                case 2:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/530919324/embed';
                     break;
                 case 3:
@@ -165,7 +168,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
