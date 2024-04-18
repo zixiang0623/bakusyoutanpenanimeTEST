@@ -46,17 +46,16 @@
             width: 100%;
         }
     </style>
-    <link rel="shortcut icon" type="image/x-icon" href="へんなの.svg">
 </head>
-<body>
+<body>     
 <header>
     <h1>爆笑短編アニメ</h1>
 </header>
 
-<div class="container">
+<div class="container">      
     <h1>爆笑短編アニメ</h1>
     <h3>爆笑短編アニメってなあに?<br>
-    爆笑短編アニメは<a href="https://scratch.mit.edu/users/utarosotaro/">@utarosotaro</a>さんがはじめ、<a href="https://scratch.mit.edu/users/uyou0003/">@uyou0003</a>さんが<br>引き継いでいる、Scratch上で作られたアニメです。<br>現在は様々なScratcherが共同制作をしています。<br>その数84人。<br>そして、ホームページ管轄は<a href="https://scratch.mit.edu/users/zixiang2013/">@zixiang2013</a>が担当をしています。<br>↓下の2作品は、爆笑短編アニメのCMです。ぜひ見てみてください。↓<br></h3>
+    爆笑短編アニメは<a href="https://scratch.mit.edu/users/utarosotaro/">@utarosotaro</a>さんがはじめ、<a href="https://scratch.mit.edu/users/uyou0003/">@uyou0003</a>さんが<br>引き継いでいる、Scratch上で作られたアニメです。<br>現在は様々なScratcherが共同制作をしています。<br>そして、ホームページ管轄は<a href="https://scratch.mit.edu/users/zixiang2013/">@zixiang2013</a>が担当をしています。<br>↓下の2作品は、爆笑短編アニメのCMです。ぜひ見てみてください。↓<br></h3>
     <iframe src="https://scratch.mit.edu/projects/736584035/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>
     <iframe src="https://scratch.mit.edu/projects/747775272/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>
     <img src="29697538_170x100.gif" alt="ねえ、読み込みバグったよ?このままでいいの?" width="340" height="200"><br>
@@ -80,41 +79,67 @@
             switch (projectId) {
                 case 1:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/530461761/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;                
                 case 2:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/530919324/embed';
                     break;
                 case 3:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/540189835/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;
                 case 4:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/540963192/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;
                 case 5:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/540392475/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;
                 case 6:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/541814575/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;
                 case 7:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/542829014/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;
                 case 8:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/542306540/embed';
-                    console.log(projectId+'話を表示しました。');
                     break;    
                 case 9:
                     scratchProjectURL = 'https://scratch.mit.edu/projects/544618437/embed';
-                    console.log(projectId+'話を表示しました。')
+                    break;
+                case 10:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/543649886/embed';
+                    break;
+                case 11:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/543089592/embed'
+                    break;
+                case 12:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/546412020/embed'
+                    break;
+                case 13:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/548633293/embed'
+                    break;
+                case 14:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/1000392861/embed'
+                    break;
+                case 15:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/551355687/embed'
+                    break;
+                case 16:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/552100309/embed'
+                    break;
+                case 17:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/553079792/embed'
+                    break;
+                case 18:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/555694195/embed'
+                    break;
+                case 19:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/555855579/embed'
+                    break;
+                case 20:
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/556950171/embed'
+                    break;
                 default:
-                    scratchProjectURL = 'https://scratch.mit.edu/projects/1000392861/embed';
-                    console.log('ごめんなさい...この話は削除されたか、まだ検索インデックスに載っていない可能性があります...そういう時は、直接Scratchで検索するか、諦めてネ☆');
+                    scratchProjectURL = 'https://scratch.mit.edu/projects/1003400748/embed';
+                    break;
             }
             scratchContainer.innerHTML = `<iframe src="${scratchProjectURL}" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>`;
         }
